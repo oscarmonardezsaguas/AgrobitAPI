@@ -12,9 +12,9 @@ namespace AgrobitAPI.Persistencia
 
         public Conexion(string db)
         {
-            string servidor = "Data Source= tcp:svragrobit.database.windows.net,1433;";
+            string servidor = "Data Source= xxxx;";
             string bd = "Initial Catalog=" + db + ";";
-            conexion = new SqlConnection(servidor + bd + "Persist Security Info=False;User ID=ServerAgrobit;Password=Agrobit.,123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+            conexion = new SqlConnection(servidor + bd + "Persist Security Info=False;User ID=xxxx;Password=xxx;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
 
         public SqlConnection getConexion()
